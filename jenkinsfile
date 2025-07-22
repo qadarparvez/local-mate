@@ -1,0 +1,10 @@
+pipeline{
+    agent{label 'any'}
+    stages{
+        stage('copying the code'){
+            step{
+                
+            }
+        }
+    }
+}
