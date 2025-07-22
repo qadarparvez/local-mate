@@ -3,6 +3,19 @@ pipeline{
     stages{
         stage('copying the code'){
             step{
+
+            }
+        }
+
+        stage('building the code'){
+            step{
+
+            }
+        }
+
+
+        stage('deploying the code'){
+            step{
                 
             }
         }
