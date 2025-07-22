@@ -15,12 +15,12 @@ FROM python:3.13-alpine
 
 WORKDIR /app
 
-COPY --from=stage builder /app 
+COPY --from=builder ./app .
 
 EXPOSE 8000
 
 ENTRYPOINT [ "python3" ]
 
-CMD {"manage.py" , "runserver"}
+CMD [ "manage.py" , "runserver" ,"0.0.0.0:8000" ]
 
 
