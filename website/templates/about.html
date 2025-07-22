@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+ {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About LocalMate - Connecting Travelers with Local Guides</title>
+    <link rel="stylesheet" href="{% static "style.css" %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/home" class="logo">LocalMate</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about" class="active">About</a>
+                <a href="/contact">Contact</a>
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Login</a>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>Our Story</h1>
+            <p>Connecting travelers with authentic local experiences across India</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section mission">
+        <div class="container">
+            <div class="mission-content">
+                <div class="mission-text">
+                    <h2 class="section-title">The Problem We Solve</h2>
+                    <p>Traveling to a new city can be overwhelming. Guidebooks and generic tours often miss the true essence of a place, while finding reliable local advice can be challenging and time-consuming.</p>
+                    <p>Many travelers end up visiting the same tourist spots, missing out on authentic experiences that only locals know about.</p>
+                </div>
+                <div class="mission-image">
+                    <img src="assets/images/frustrated-tourist.jpg" alt="Frustrated tourist with map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section solution">
+        <div class="wave-divider"></div>
+        <div class="container">
+            <h2 class="section-title">Our Solution</h2>
+            <div class="solution-content">
+                <p>LocalMate bridges the gap between travelers and knowledgeable locals who are passionate about sharing their city's hidden gems.</p>
+                <div class="solution-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Verified Guides</h3>
+                        <p>All guides undergo a thorough verification process</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <h3>Review System</h3>
+                        <p>Transparent ratings and reviews from previous travelers</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-rupee-sign"></i>
+                        <h3>Clear Pricing</h3>
+                        <p>Hourly rates with no hidden charges</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revenue Model Section -->
+    <section class="section revenue-model">
+        <div class="container">
+            <h2 class="section-title">Our Business Model</h2>
+            <div class="revenue-columns">
+                <div class="revenue-column">
+                    <div class="revenue-card">
+                        <i class="fas fa-percentage"></i>
+                        <h3>Commission per Booking</h3>
+                        <p>We take a small 10-20% commission from each booking made through our platform.</p>
+                    </div>
+                </div>
+                <div class="revenue-column">
+                    <div class="revenue-card">
+                        <i class="fas fa-crown"></i>
+                        <h3>Premium Listings</h3>
+                        <p>Guides can upgrade to premium listings for better visibility and more bookings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Opportunity Section -->
+    <section class="section market-opportunity">
+        <div class="container">
+            <h2 class="section-title">Market Opportunity</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h3>Booming Tourism in India</h3>
+                        <p>India welcomed over 10 million foreign tourists with domestic tourism crossing 2 billion.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-content">
+                        <h3>Rise of Gig Economy</h3>
+                        <p>Over 15 million Indians now participate in the gig economy, seeking flexible work.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h3>Demand for Authenticity</h3>
+                        <p>87% of millennial travelers prioritize authentic experiences over traditional tourism.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="section metrics">
+        <div class="container">
+            <h2 class="section-title">By The Numbers</h2>
+            <div class="metric-cards">
+                <div class="metric-card">
+                    <div class="metric-number">10K+</div>
+                    <div class="metric-label">Bookings/Month</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">2K+</div>
+                    <div class="metric-label">Active Guides</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">4.8</div>
+                    <div class="metric-label">Average Rating</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">30%</div>
+                    <div class="metric-label">Repeat Users</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Quote Section -->
+    <section class="founder-quote">
+        <div class="container">
+            <div class="quote-content">
+                <div class="quote-image">
+                    <img src="assets/images/founder.jpg" alt="LocalMate Founder">
+                </div>
+                <div class="quote-text">
+                    <blockquote>
+                        "We believe every street has a story worth hearing, every neighborhood has flavors worth tasting, and every city has people worth meeting. LocalMate was born from this simple idea."
+                    </blockquote>
+                    <p>- Priya Sharma, Founder & CEO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>LocalMate</h3>
+                    <p>Connecting travelers with trusted local guides for authentic experiences in Indian cities.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> support@localmate.in</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LocalMate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static "script.js" %}"></script>
+</body>
+</html>
