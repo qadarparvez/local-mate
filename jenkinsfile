@@ -16,7 +16,7 @@ pipeline{
 
         stage('deploying the code'){
             step{
-
+                echo "this is deploying the code"
             }
         }
     }
