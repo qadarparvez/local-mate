@@ -3,20 +3,20 @@ pipeline{
     stages{
         stage('copying the code'){
             step{
-
+                echo "copying the code"
             }
         }
 
         stage('building the code'){
             step{
-
+                echo "building the code "
             }
         }
 
 
         stage('deploying the code'){
             step{
-                
+
             }
         }
     }
