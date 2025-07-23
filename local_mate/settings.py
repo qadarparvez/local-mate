@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 ]
 
 AUTHENTICATION_BACKENDS=[
-    'django.countrib.auth.backends.ModelBackend'
+    'django.countrib.auth.backends.ModelBackend' # for authentication 
 ]
 
 MIDDLEWARE = [
