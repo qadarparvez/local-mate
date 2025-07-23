@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'website',
 ]
 
+AUTHENTICATION_BACKENDS=[
+    'django.countrib.auth.backends.ModelBackend'
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
