@@ -22,3 +22,10 @@ def contact(request):
         contact_entry.save()
         success = True
     return render(request, 'contact.html', {'success': success})
+
+
+def sighnup(request):
+    return render(request, 'sighnup.html')
+
+def login(request):
+    return render(request , 'login.html')
