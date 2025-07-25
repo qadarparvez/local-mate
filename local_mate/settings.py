@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-y(^k7u+3)e@cxvcpbyy5zj)8@@^7j+n(t+_bh!#f#5$2m5!xe8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,11 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
+    'auth_dash',
 ]
 
 AUTHENTICATION_BACKENDS=[
-    'django.countrib.auth.backends.ModelBackend' # for authentication 
+    'django.contrib.auth.backends.ModelBackend' # for authentication  
 ]
+
+LOGIN_URL = '/auth/login/'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

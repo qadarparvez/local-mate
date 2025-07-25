@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from website.models import form 
 
+
 # Create your views here.
 
 
@@ -24,8 +25,3 @@ def contact(request):
     return render(request, 'contact.html', {'success': success})
 
 
-def sighnup(request):
-    return render(request, 'sighnup.html')
-
-def login(request):
-    return render(request , 'login.html')
