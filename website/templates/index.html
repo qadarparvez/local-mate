@@ -1,3 +1,4 @@
+{%load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,16 +31,16 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Book Local Guides for Authentic Experiences</h1>
-                <p>Discover the soul of a city through the eyes of its people.</p>
-                <a href="#" class="btn btn-primary btn-large">Find a Guide</a>
-            </div>
+   <!-- Hero Section -->
+<section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{% static 'images/home.png' %}') no-repeat center center/cover;">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Book Local Guides for Authentic Experiences</h1>
+            <p>Discover the soul of a city through the eyes of its people.</p>
+            <a href="{%url 'signup'%}" class="btn btn-primary btn-large">Find a Guide</a>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Why LocalMate Section -->
     <section class="section why-localmate">
@@ -71,29 +72,29 @@
         </div>
     </section>
 
-    <!-- Target Users Section -->
-    <section class="section target-users">
-        <div class="container">
-            <h2 class="section-title">Who Uses LocalMate?</h2>
-            <div class="user-types">
-                <div class="user-type tourist">
-                    <div class="overlay"></div>
-                    <h3>Tourists</h3>
-                    <p>See hidden places beyond the guidebooks</p>
-                </div>
-                <div class="user-type local">
-                    <div class="overlay"></div>
-                    <h3>Locals</h3>
-                    <p>Rediscover your city and earn money</p>
-                </div>
-                <div class="user-type foodie">
-                    <div class="overlay"></div>
-                    <h3>Foodies</h3>
-                    <p>Eat where locals eat, not tourist traps</p>
-                </div>
+   <!-- Target Users Section -->
+<section class="section target-users">
+    <div class="container">
+        <h2 class="section-title">Who Uses LocalMate?</h2>
+        <div class="user-types">
+            <div class="user-type tourist" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{% static 'images/tourist.png' %}') no-repeat center center/cover;">
+                <div class="overlay"></div>
+                <h3>Tourists</h3>
+                <p>See hidden places beyond the guidebooks</p>
+            </div>
+            <div class="user-type local" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{% static 'images/local.png' %}') no-repeat center center/cover;">
+                <div class="overlay"></div>
+                <h3>Locals</h3>
+                <p>Rediscover your city and earn money</p>
+            </div>
+            <div class="user-type foodie" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{% static 'images/foodie.png' %}') no-repeat center center/cover;">
+                <div class="overlay"></div>
+                <h3>Foodies</h3>
+                <p>Eat where locals eat, not tourist traps</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- How It Works Section -->
     <section class="section how-it-works">
@@ -132,7 +133,7 @@
     <section class="cta">
         <div class="container">
             <h2>Start Your Local Adventure Today</h2>
-            <a href="#" class="btn btn-primary btn-large">Explore Guides</a>
+            <a href="{%url 'signup'%}" class="btn btn-primary btn-large">Explore Guides</a>
         </div>
     </section>
 
@@ -153,7 +154,7 @@
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="/home">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/contact">Contact</a></li>
                         <li><a href="#">Privacy Policy</a></li>

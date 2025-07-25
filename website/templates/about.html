@@ -32,12 +32,12 @@
     </nav>
 
     <!-- About Hero Section -->
-    <section class="about-hero">
-        <div class="container">
-            <h1>Our Story</h1>
-            <p>Connecting travelers with authentic local experiences across India</p>
-        </div>
-    </section>
+<section class="about-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{% static 'images/about.png' %}') no-repeat center center/cover;">
+    <div class="container">
+        <h1>Our Story</h1>
+        <p>Connecting travelers with authentic local experiences across India</p>
+    </div>
+</section>
 
     <!-- Mission Section -->
     <section class="section mission">
@@ -49,7 +49,7 @@
                     <p>Many travelers end up visiting the same tourist spots, missing out on authentic experiences that only locals know about.</p>
                 </div>
                 <div class="mission-image">
-                    <img src="assets/images/frustrated-tourist.jpg" alt="Frustrated tourist with map">
+                    <img src="{%static 'images/traveler.png'%}" alt="Frustrated tourist with map">
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="/home">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/contact">Contact</a></li>
                         <li><a href="#">Privacy Policy</a></li>

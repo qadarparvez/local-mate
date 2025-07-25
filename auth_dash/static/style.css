@@ -1319,3 +1319,54 @@ blockquote::before {
         align-self: flex-end;
     }
 }
+
+
+/* Expanded Hero Section Styles */
+.expanded-hero {
+    height: 100vh; /* Full viewport height */
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* Remove margin-top since navbar is gone */
+    margin-top: 0 !important;
+}
+
+.expanded-hero .hero-content {
+    animation: fadeInUp 1s ease;
+    width: 100%;
+}
+
+/* Adjust form section positioning */
+.auth-form-section {
+    margin-top: -80px; /* Pull form up into hero space */
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .expanded-hero {
+        min-height: 500px;
+    }
+    
+    .auth-form-section {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .expanded-hero {
+        min-height: 400px;
+    }
+    
+    .expanded-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .expanded-hero p {
+        font-size: 1.2rem;
+    }
+}
+
+
