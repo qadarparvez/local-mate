@@ -1,2 +1,6 @@
 .terraform
 .terraform.lock.hcl
+local_mate_key
+local_mate_key.pub 
+terraform.tfstate
+terraform.tfstate.backup
