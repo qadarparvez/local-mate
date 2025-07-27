@@ -43,7 +43,7 @@
     <section class="section contact-form-section">
         <div class="container">
             <div class="form-container">
-                <form method = "post" action = "/contact/" id="contactForm" class="floating-form">
+                <form method = "POST" action = "/contact/" id="contactForm" class="floating-form">
                     {% csrf_token %}
                     {% if success %}
                         <div class="form-success">
