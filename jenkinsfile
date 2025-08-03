@@ -31,8 +31,8 @@ pipeline{
         stage('deploying nginx'){
             step{
                 echo "this is deploying nginx"
-                sh 'docker run -d --name nginx-container --network local_mate_network -p 80:80 -v nginx:latest'
+                sh 'docker run -d --name nginx-container --network local_mate_network -p 80:80 -v nginx:latest' 
             }
         }
     }
-}
+} 
