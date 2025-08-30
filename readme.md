@@ -7,20 +7,20 @@
 4. virtualenv installed 
 
 ### local deployment
-1. 
 ```
 virtualenv env
 ```
-2. 
 ```
 source env/bin/activate
 ```
-3. 
 ```
 pip install -r requirements.txt
 ```
-4. 
 ```
-
+python3 manage.py migrate
+```
+```
+python3 manage.py runserver 
+```
 
 
