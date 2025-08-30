@@ -50,4 +50,7 @@ kubectl apply -f service.yml
 ```
 kubectl get svc -n django
 ```
-kubectl 
+```
+kubectl port-forward service/django-service 80:80 -n django --address=0.0.0.0 
+```
+### visit localhost:80 to see the deployment 
