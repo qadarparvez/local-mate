@@ -23,4 +23,10 @@ python3 manage.py migrate
 python3 manage.py runserver 
 ```
 
-
+### docker deployment 
+```
+docker build -t django-app .
+```
+```
+docker run -d -p 8000:8000 django-app
+```
