@@ -30,3 +30,24 @@ docker build -t django-app .
 ```
 docker run -d -p 8000:8000 django-app
 ```
+
+### Kubernetes Deployment
+```
+kind cluster create --name django-cluster --config=config.yml
+```
+```
+kubectl get nodes
+```
+```
+kubectl apply -f deployment.yml
+```
+```
+kubectl get pods -n django
+```
+```
+kubectl apply -f service.yml
+```
+```
+kubectl get svc -n django
+```
+kubectl 
