@@ -1,2 +1,2 @@
 # local-mate
-*dockr ps
+*dockr ps*
