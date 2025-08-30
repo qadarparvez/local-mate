@@ -1,12 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: django-service
-  namespace: django
+  name: local-svc
+  namespace: local
 
 spec:
   selector:
-    app: django-app
+    app: local
   ports:
     - protocol: TCP
       port: 80
